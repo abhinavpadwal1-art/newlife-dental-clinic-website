@@ -1,0 +1,1 @@
+Newlife Dental Clinic website assets. Genuine clinic imagery and branding are used on the website.
