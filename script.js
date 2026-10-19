@@ -19,7 +19,7 @@ if (form) form.addEventListener('submit', event => {
   event.preventDefault();
   const data = new FormData(event.currentTarget);
   const message = `Hello Newlife Dental Clinic, I would like to request an appointment.\n\nName: ${data.get('name')}\nMobile: ${data.get('phone')}\nTreatment / concern: ${data.get('treatment')}\nMessage: ${data.get('message') || '—'}`;
-  window.open(`https://wa.me/918793297147?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+  window.location.assign(`https://wa.me/918793297147?text=${encodeURIComponent(message)}`);
 });
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
